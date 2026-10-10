@@ -1,3 +1,10 @@
+.disclaimer {
+    background-color: #fff3cd;
+    color: #664d03;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
 
 *{
     margin: 0px;
@@ -21,7 +28,7 @@
 }
 
 .logo{
-    background-image: url("./images/amazon_logo.png");
+    background-image: url("../images/bazaar_logo.png");
     height: 55px;
     width: 100%;
     background-size: cover;
