@@ -15,11 +15,13 @@
 
 .navbar{
     background-color: #0F1111;
-    height:60px;
+    height:auto;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .nav-logo{
@@ -74,7 +76,8 @@
     display: flex;
     justify-content: space-evenly;
     height: 40px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 5px;
     border: 3px solid transparent;
 }
@@ -90,7 +93,7 @@
 }
 
 .search-input{
-    width: 400px;
+    width: 100%;
     font-size: 1rem;
     border: none;
 }
@@ -185,7 +188,7 @@ span{
 }
 
 .box{
-    width: 290px;
+    width: min(290px, 90vw);
     height: 465px;
     scroll-snap-align: start;
     flex-shrink: 0; 
@@ -208,4 +211,54 @@ span{
     top: 20px;
     left: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 750px){
+
+  .navbar{
+        order: 4;
+        width: 100%;
+    }
+
+    .nav-search{
+        width: 95%;
+    }
+
+    .panel{
+        flex-wrap: wrap;
+        height: auto;
+        
+    }
+
+    .nav-logo{
+        order: 1;
+    }
+
+    .nav-signin{
+        order: 2;
+    }
+
+    .nav-cart{
+        order: 3;
+    }
+
+
+    .panel-ops{
+        width: 100%;
+        text-align: center;
+    }
+
+    .box{
+        width: 80vw;
+        height: 400px;
+    }
+
+    .box h3{
+        font-size: 1.5rem;
+    }
+    
+    .nav-address{
+        order: 5;
+        width: 100%;
+    }
 }
