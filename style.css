@@ -30,7 +30,7 @@
 }
 
 .logo{
-    background-image: url("../images/bazaar_logo.png");
+    background-image: url("./images/bazaar_logo.png");
     height: 55px;
     width: 100%;
     background-size: cover;
@@ -278,6 +278,5 @@ span{
     width: 100%;
 }
     
-    
-    
+       
 }
